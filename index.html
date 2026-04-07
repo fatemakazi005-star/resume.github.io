@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fatema Kazi — Data Science & AI Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="navbar">
+    <div class="nav-logo">FK<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <span class="toggle-icon">☀</span>
+    </button>
+    <button class="nav-hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#home" onclick="closeMobileMenu()">Home</a></li>
+      <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
+      <li><a href="#achievements" onclick="closeMobileMenu()">Achievements</a></li>
+      <li><a href="#projects" onclick="closeMobileMenu()">Projects</a></li>
+      <li><a href="#gallery" onclick="closeMobileMenu()">Gallery</a></li>
+      <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ═══════════ SECTION 1 · HOME ═══════════ -->
+  <section class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-ring"></div>
+        <img src="assets/profile.jpeg" alt="Fatema Kazi" class="hero-photo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+        <div class="hero-photo-fallback">FK</div>
+      </div>
+
+      <div class="hero-text">
+        <div class="hero-badge animate-in" style="animation-delay:0.1s">
+          <span class="badge-dot"></span> Open to opportunities
+        </div>
+        <h1 class="hero-name animate-in" style="animation-delay:0.2s">
+          Fatema<br /><span class="name-accent">Mahamad Kazi</span>
+        </h1>
+        <p class="hero-title animate-in" style="animation-delay:0.35s">
+          <span class="typed-text" id="typedText"></span><span class="type-cursor">|</span>
+        </p>
+        <p class="hero-intro animate-in" style="animation-delay:0.5s">
+          B.Tech student at MIT-VPU University · Pune<br />
+          Passionate about building intelligent, data-driven solutions that create real-world impact.
+        </p>
+        <div class="hero-actions animate-in" style="animation-delay:0.65s">
+          <a href="#projects" class="btn-primary">View My Work</a>
+          <a href="#contact" class="btn-secondary">Get In Touch</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <div class="scroll-arrow"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ═══════════ SECTION 2 · ABOUT ═══════════ -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-label">01 / About Me</div>
+      <h2 class="section-title">Who <em>I</em> Am</h2>
+
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <div class="about-card-icon">🎓</div>
+          <h3>Education</h3>
+          <p><strong>B.Tech — MIT-VPU University</strong><br />Maharashtra Institute of Technology – Vishwakarma Prabodhan University, Pune<br /><span class="mono">2022 – Present</span></p>
+          <p class="small-text">Coursework in Data Science, AI, Programming & Applied Sciences</p>
+        </div>
+
+        <div class="about-card reveal" style="animation-delay:0.1s">
+          <div class="about-card-icon">🎯</div>
+          <h3>Goal</h3>
+          <p>To become a professional <strong>Data Scientist</strong> — building ML models and AI systems that solve meaningful, real-world problems at scale.</p>
+        </div>
+
+        <div class="about-card reveal" style="animation-delay:0.2s">
+          <div class="about-card-icon">💡</div>
+          <h3>Interests</h3>
+          <div class="tag-cloud">
+            <span class="tag">Data Science</span>
+            <span class="tag">Machine Learning</span>
+            <span class="tag">AI</span>
+            <span class="tag">NLP</span>
+            <span class="tag">Data Visualization</span>
+            <span class="tag">Statistical Modeling</span>
+          </div>
+        </div>
+
+        <div class="about-card reveal" style="animation-delay:0.3s">
+          <div class="about-card-icon">⚡</div>
+          <h3>Strengths</h3>
+          <ul class="strength-list">
+            <li><span>🧠</span> Strong Analytical Mind</li>
+            <li><span>📚</span> Eager Learner</li>
+            <li><span>🔗</span> Interdisciplinary Thinking</li>
+            <li><span>🎯</span> Goal-Oriented</li>
+            <li><span>🔍</span> Attention to Detail</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div class="skills-section reveal">
+        <h3 class="sub-heading">Technical Skills</h3>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <div class="skill-group-title">Languages</div>
+            <div class="skill-pills">
+              <span class="pill">Python</span>
+              <span class="pill">MATLAB</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-group-title">Data Science</div>
+            <div class="skill-pills">
+              <span class="pill">Data Analysis</span>
+              <span class="pill">Data Visualization</span>
+              <span class="pill">Statistical Thinking</span>
+              <span class="pill">Pandas</span>
+              <span class="pill">Matplotlib</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-group-title">AI & ML</div>
+            <div class="skill-pills">
+              <span class="pill">ML Fundamentals</span>
+              <span class="pill">Neural Networks</span>
+              <span class="pill">Prompt Engineering</span>
+              <span class="pill">LLMs</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-group-title">Tools & Platforms</div>
+            <div class="skill-pills">
+              <span class="pill">Jupyter Notebook</span>
+              <span class="pill">Google Colab</span>
+              <span class="pill">GitHub</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Languages -->
+      <div class="lang-section reveal">
+        <h3 class="sub-heading">Languages</h3>
+        <div class="lang-grid">
+          <div class="lang-item"><span class="lang-flag">🇬🇧</span><span>English</span><span class="lang-level">Professional</span></div>
+          <div class="lang-item"><span class="lang-flag">🇮🇳</span><span>Hindi</span><span class="lang-level">Fluent</span></div>
+          <div class="lang-item"><span class="lang-flag">🇮🇳</span><span>Marathi</span><span class="lang-level">Fluent</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SECTION 3 · ACHIEVEMENTS ═══════════ -->
+  <section class="section achievements" id="achievements">
+    <div class="container">
+      <div class="section-label">02 / Achievements</div>
+      <h2 class="section-title">Certificates <em>&</em> Awards</h2>
+
+      <div class="cert-grid">
+
+        <div class="cert-card reveal" style="--accent:#f59e0b">
+          <div class="cert-ribbon">Govt. Initiative</div>
+          <div class="cert-icon">🏛️</div>
+          <h3>Yuva AI Program</h3>
+          <div class="cert-issuer">AICTE / Government of India</div>
+          <p>Government-backed AI literacy program covering AI concepts, applications, ethics, ML tools, and real-world AI use cases for young learners.</p>
+          <div class="cert-tags">
+            <span>AI Literacy</span><span>Machine Learning</span><span>AI Ethics</span>
+          </div>
+          <a href="assets/cert-yuva-ai.jpg" target="_blank" class="cert-link">View Certificate →</a>
+        </div>
+
+        <div class="cert-card reveal" style="--accent:#6366f1;animation-delay:0.1s">
+          <div class="cert-icon">🤖</div>
+          <h3>Introduction to Modern AI</h3>
+          <div class="cert-issuer">Online Certification</div>
+          <p>Comprehensive course on modern AI including neural networks, generative AI, LLMs, and prompt engineering. Developed understanding of emerging AI trends.</p>
+          <div class="cert-tags">
+            <span>Neural Networks</span><span>GenAI</span><span>Prompt Eng.</span>
+          </div>
+          <a href="assets/cert-modern-ai.jpg" target="_blank" class="cert-link">View Certificate →</a>
+        </div>
+
+        <div class="cert-card reveal" style="--accent:#10b981;animation-delay:0.2s">
+          <div class="cert-icon">📐</div>
+          <h3>MATLAB Programming</h3>
+          <div class="cert-issuer">Online / Academic Certification</div>
+          <p>Course in MATLAB covering scientific computing, matrix operations, data visualization, and algorithm development for engineering tasks.</p>
+          <div class="cert-tags">
+            <span>MATLAB</span><span>Scientific Computing</span><span>Data Viz</span>
+          </div>
+          <a href="assets/cert-matlab.jpg" target="_blank" class="cert-link">View Certificate →</a>
+        </div>
+
+        <div class="cert-card reveal" style="--accent:#ec4899;animation-delay:0.3s">
+          <div class="cert-icon">⚗️</div>
+          <h3>Applied Chemistry</h3>
+          <div class="cert-issuer">B.Tech Academic Course</div>
+          <p>Domain knowledge in chemical processes and material science relevant to engineering applications — enabling multi-disciplinary problem solving.</p>
+          <div class="cert-tags">
+            <span>Chemistry</span><span>Material Science</span><span>Engineering</span>
+          </div>
+          <a href="assets/cert-chemistry.jpg" target="_blank" class="cert-link">View Certificate →</a>
+        </div>
+
+        <!-- Coursera Placeholder -->
+        <div class="cert-card reveal" style="--accent:#0ea5e9;animation-delay:0.4s">
+          <div class="cert-icon">🎓</div>
+          <h3>Coursera Certificate</h3>
+          <div class="cert-issuer">Coursera</div>
+          <p>Online professional certification completed through Coursera, demonstrating commitment to continuous learning and skill development.</p>
+          <div class="cert-tags">
+            <span>Online Learning</span><span>Professional</span>
+          </div>
+          <a href="assets/cert-coursera.jpg" target="_blank" class="cert-link">View Certificate →</a>
+        </div>
+
+        <!-- Netcad Placeholder -->
+        <div class="cert-card reveal" style="--accent:#f97316;animation-delay:0.5s">
+          <div class="cert-icon">🛠️</div>
+          <h3>Netcad Certificate</h3>
+          <div class="cert-issuer">Netcad</div>
+          <p>Technical certification demonstrating proficiency in tools and concepts covered through the Netcad training program.</p>
+          <div class="cert-tags">
+            <span>Technical Skills</span><span>Certification</span>
+          </div>
+          <a href="assets/cert-netcad.jpg" target="_blank" class="cert-link">View Certificate →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SECTION 4 · PROJECTS ═══════════ -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-label">03 / Projects</div>
+      <h2 class="section-title">My <em>Work</em></h2>
+
+      <div class="projects-grid">
+
+        <!-- ACE Project -->
+        <div class="project-card featured reveal">
+          <div class="project-badge">ACE Project</div>
+          <div class="project-img-wrap">
+            <img src="assets/project-ace.jpg" alt="ACE Project" onerror="this.parentElement.classList.add('no-img')" />
+            <div class="project-img-fallback">
+              <span>🏆</span>
+              <p>ACE Project</p>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>ACE Project</h3>
+            <p>A key academic project demonstrating applied computing and engineering skills through hands-on problem solving and innovation.</p>
+            <div class="project-tech">
+              <span>Python</span><span>Data Analysis</span><span>Engineering</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/fatema-kazi" target="_blank" class="proj-link">GitHub →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI4A Project -->
+        <div class="project-card reveal" style="animation-delay:0.1s">
+          <div class="project-badge">Ai4A</div>
+          <div class="project-img-wrap">
+            <img src="assets/project-ai4a.jpg" alt="Ai4A Project" onerror="this.parentElement.classList.add('no-img')" />
+            <div class="project-img-fallback">
+              <span>🤖</span>
+              <p>Ai4A Project</p>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>AI for All (Ai4A)</h3>
+            <p>AI literacy and application project demonstrating understanding of modern AI tools, responsible AI usage, and societal impact of artificial intelligence.</p>
+            <div class="project-tech">
+              <span>AI</span><span>LLMs</span><span>Prompt Engineering</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/fatema-kazi" target="_blank" class="proj-link">GitHub →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design Thinking -->
+        <div class="project-card reveal" style="animation-delay:0.2s">
+          <div class="project-badge">Design Thinking</div>
+          <div class="project-img-wrap">
+            <img src="assets/project-design.jpg" alt="Design Thinking Project" onerror="this.parentElement.classList.add('no-img')" />
+            <div class="project-img-fallback">
+              <span>💡</span>
+              <p>Design Thinking</p>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Design Thinking Project</h3>
+            <p>Applied human-centered design methodology to identify real-world problems, ideate solutions, prototype, and test — following the full design thinking process.</p>
+            <div class="project-tech">
+              <span>Design Thinking</span><span>Problem Solving</span><span>Innovation</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/fatema-kazi" target="_blank" class="proj-link">GitHub →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Data EDA -->
+        <div class="project-card reveal" style="animation-delay:0.3s">
+          <div class="project-badge">2024</div>
+          <div class="project-img-wrap">
+            <img src="assets/project-eda.jpg" alt="EDA Project" onerror="this.parentElement.classList.add('no-img')" />
+            <div class="project-img-fallback">
+              <span>📊</span>
+              <p>EDA Project</p>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Data Exploration & Visualization</h3>
+            <p>Performed exploratory data analysis on a real-world dataset. Created bar charts, heatmaps, and scatter plots to uncover trends and communicate insights effectively.</p>
+            <div class="project-tech">
+              <span>Python</span><span>Pandas</span><span>Matplotlib</span><span>Jupyter</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/fatema-kazi" target="_blank" class="proj-link">GitHub →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI Chatbot -->
+        <div class="project-card reveal" style="animation-delay:0.4s">
+          <div class="project-badge">Self-Initiated</div>
+          <div class="project-img-wrap">
+            <img src="assets/project-chatbot.jpg" alt="AI Chatbot Study" onerror="this.parentElement.classList.add('no-img')" />
+            <div class="project-img-fallback">
+              <span>💬</span>
+              <p>AI Chatbot Study</p>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>AI Chatbot Interaction Study</h3>
+            <p>Researched and experimented with large language models and AI assistants. Developed skills in prompt engineering and understanding AI model behavior and limitations.</p>
+            <div class="project-tech">
+              <span>LLMs</span><span>Prompt Engineering</span><span>AI Tools</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/fatema-kazi" target="_blank" class="proj-link">GitHub →</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SECTION 5 · GALLERY ═══════════ -->
+  <section class="section gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-label">04 / Gallery</div>
+      <h2 class="section-title">Photos <em>&</em> Certificates</h2>
+      <p class="gallery-desc">A visual showcase of my journey, certifications, and memorable moments.</p>
+
+      <!-- Filter Tabs -->
+      <div class="gallery-tabs">
+        <button class="tab-btn active" data-filter="all">All</button>
+        <button class="tab-btn" data-filter="cert">Certificates</button>
+        <button class="tab-btn" data-filter="photo">Photos</button>
+        <button class="tab-btn" data-filter="event">Events</button>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-item reveal" data-cat="cert">
+          <img src="assets/cert-yuva-ai.jpg" alt="Yuva AI Certificate" onerror="this.parentElement.classList.add('no-img-gallery')" loading="lazy" />
+          <div class="gallery-img-fallback"><span>🏛️</span><p>Yuva AI Certificate</p></div>
+          <div class="gallery-overlay"><span>Yuva AI Certificate</span></div>
+        </div>
+        <div class="gallery-item reveal" data-cat="cert" style="animation-delay:0.05s">
+          <img src="assets/cert-modern-ai.jpg" alt="Modern AI Certificate" onerror="this.parentElement.classList.add('no-img-gallery')" loading="lazy" />
+          <div class="gallery-img-fallback"><span>🤖</span><p>Modern AI Certificate</p></div>
+          <div class="gallery-overlay"><span>Modern AI Certificate</span></div>
+        </div>
+        <div class="gallery-item reveal" data-cat="cert" style="animation-delay:0.1s">
+          <img src="assets/cert-matlab.jpg" alt="MATLAB Certificate" onerror="this.parentElement.classList.add('no-img-gallery')" loading="lazy" />
+          <div class="gallery-img-fallback"><span>📐</span><p>MATLAB Certificate</p></div>
+          <div class="gallery-overlay"><span>MATLAB Certificate</span></div>
+        </div>
+        <div class="gallery-item reveal" data-cat="cert" style="animation-delay:0.15s">
+          <img src="assets/cert-coursera.jpg" alt="Coursera Certificate" onerror="this.parentElement.classList.add('no-img-gallery')" loading="lazy" />
+          <div class="gallery-img-fallback"><span>🎓</span><p>Coursera Certificate</p></div>
+          <div class="gallery-overlay"><span>Coursera Certificate</span></div>
+        </div>
+        <div class="gallery-item reveal" data-cat="cert" style="animation-delay:0.2s">
+          <img src="assets/cert-netcad.jpg" alt="Netcad Certificate" onerror="this.parentElement.classList.add('no-img-gallery')" loading="lazy" />
+          <div class="gallery-img-fallback"><span>🛠️</span><p>Netcad Certificate</p></div>
+          <div class="gallery-overlay"><span>Netcad Certificate</span></div>
+        </div>
+        <div class="gallery-item reveal" data-cat="photo" style="animation-delay:0.25s">
+          <img src="assets/profile.jpeg" alt="Profile Photo" onerror="this.parentElement.classList.add('no-img-gallery')" loading="lazy" />
+          <div class="gallery-img-fallback"><span>👩‍💻</span><p>Profile Photo</p></div>
+          <div class="gallery-overlay"><span>Profile Photo</span></div>
+        </div>
+        <div class="gallery-item reveal" data-cat="event" style="animation-delay:0.3s">
+          <img src="assets/event-1.jpg" alt="Event" onerror="this.parentElement.classList.add('no-img-gallery')" loading="lazy" />
+          <div class="gallery-img-fallback"><span>🎪</span><p>Academic Event</p></div>
+          <div class="gallery-overlay"><span>Academic Event</span></div>
+        </div>
+        <div class="gallery-item reveal" data-cat="event" style="animation-delay:0.35s">
+          <img src="assets/event-2.jpg" alt="Workshop" onerror="this.parentElement.classList.add('no-img-gallery')" loading="lazy" />
+          <div class="gallery-img-fallback"><span>🏫</span><p>Workshop / Seminar</p></div>
+          <div class="gallery-overlay"><span>Workshop / Seminar</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SECTION 6 · CONTACT ═══════════ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-label">05 / Contact</div>
+      <h2 class="section-title">Let's <em>Connect</em></h2>
+      <p class="contact-intro">I'm always open to collaborations, learning opportunities, and conversations about AI & Data Science. Reach out!</p>
+
+      <div class="contact-wrap">
+        <div class="contact-info reveal">
+          <a href="mailto:fatema.kazi@email.com" class="contact-item">
+            <div class="contact-icon">✉</div>
+            <div>
+              <div class="contact-label">Email</div>
+              <div class="contact-value">fatema.kazi@email.com</div>
+            </div>
+          </a>
+          <a href="tel:+910000000000" class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <div class="contact-label">Phone</div>
+              <div class="contact-value">+91 00000 00000</div>
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/fatema-kazi" target="_blank" class="contact-item">
+            <div class="contact-icon">💼</div>
+            <div>
+              <div class="contact-label">LinkedIn</div>
+              <div class="contact-value">linkedin.com/in/fatema-kazi</div>
+            </div>
+          </a>
+          <a href="https://github.com/fatema-kazi" target="_blank" class="contact-item">
+            <div class="contact-icon">⌥</div>
+            <div>
+              <div class="contact-label">GitHub</div>
+              <div class="contact-value">github.com/fatema-kazi</div>
+            </div>
+          </a>
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <div class="contact-label">Location</div>
+              <div class="contact-value">Solapur, Maharashtra, India</div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" style="animation-delay:0.2s" onsubmit="handleFormSubmit(event)">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Jane Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" placeholder="hello@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Let's talk about..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary full-width">Send Message 🚀</button>
+          <div class="form-success" id="formSuccess">✅ Message sent! I'll get back to you soon.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">FK<span class="dot">.</span></div>
+      <p>© 2025 Fatema Mahamad Kazi · Built with ❤️ using HTML, CSS & JavaScript</p>
+      <p class="mono small-text">Solapur, Maharashtra · MIT-VPU University</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
